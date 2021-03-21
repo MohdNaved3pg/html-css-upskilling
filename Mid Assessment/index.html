@@ -10,7 +10,7 @@
 			background-color: floralwhite;
 		}
 
-		nav>a {
+		.nav-header>a {
 			text-decoration: none;
 			color: inherit;
 		}
@@ -33,6 +33,10 @@
 			font-size: 30px;
 		}
 
+		.main-features {
+			text-align: center;
+		}
+
 		.button {
 			background-color: #4CAF50;
 			/* Green */
@@ -51,33 +55,24 @@
 			background-color: #008CBA;
 		}
 
-		/* Blue */
-		.logo-strip {
-			background-color: white;
-			margin-left: -6.8%;
-			padding-left: 5%;
-			padding-top: 7%;
-			padding-bottom: 7%;
-			width: 108.5%;
-		}
-
 		.center {
 			margin: auto;
-			width: 50%;
-			padding: 10px;
+			width: 60%;
 		}
 
 		.seperate {
-			margin-bottom: 5%;
+			margin-top: 5%;
 			margin-bottom: 5%;
 		}
 
-		/* .first-line-features{
-		/*display:flex;
-	}
-	.second-line-features{
-		/*display:flex;
-	} */
+		.features {
+			padding-left: 1%;
+		}
+
+		.feature>p {
+			margin-top: 1%;
+		}
+
 		.feature {
 			padding: 3%;
 			padding-left: 0%;
@@ -93,18 +88,39 @@
 			background-color: floralwhite;
 			width: 1100px;
 			margin: auto;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		.strip {
+			width: 1100px;
+			background-color: white;
+		}
+
+		.footer {
+			background-color: black;
+			color: white;
+			width: 1100px;
+			margin: auto;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		.footer-links>a {
+			text-decoration: none;
+			color: inherit;
+			margin-top: 5%;
+			margin-left: 5%;
 		}
 	</style>
 </head>
 
 <body>
-	<div class="wrapper">
+	<main class="wrapper">
 		<div class="row">
 			<div class="column icon">
 				<i class="fas fa-cloud"></i> W3Cloud
 			</div>
 			<div class="column">
-				<nav>
+				<nav class="nav-header">
 					<a href="/html/">HTML</a> |
 					<a href="/css/">CSS</a> |
 					<a href="/js/">JavaScript</a> |
@@ -114,158 +130,211 @@
 		</div>
 		<section class="row first seperate" style="margin-top:5%">
 			<!-- Section 1 -->
-			<section class="column main left">
-				<h1>Learn to create Projects!</h1>
-				<h1>Get more Job done.<h1>
-						<button class="button button2">Get Started!</button>
+			<section class="column main">
+				<h1>Learn to create Projects! Get more Job done.</h1>
+				<button class="button button2">Get Started!</button>
 			</section>
 
 			<!-- Section 2 -->
-			<section class="column" style="margin-left:6%">
+			<section class="column" style="margin-left:-2%">
 				<img src="images/main-image.png" width="700 px">
 			</section>
 		</section>
 
-		<section class=" row logo-strip">
-			<img src="images/logo-strip.jpg">
+		<section class=" row seperate">
+			<img width="1100px;" src="images/logo-strip.jpg">
 		</section>
 
 		<section class="features seperate">
 			<section class="main-features center">
-				<div style="margin: auto;text-align: center;">
-					<h1 style="font-size:35px; margin-bottom:1%">Main features of our website</h1>
-				</div>
-				<div style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</div>
+				<h2 style="font-size:35px; margin-bottom: 1%;">Main features of our website</h2>
+				<p style="margin-top: 1%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
 			</section>
 			<section class="row first-line-features">
 				<section class="feature">
-					<div>
-						<h1 class="feature-header">Feature</h1>
-					</div>
-					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua.</div>
+					<h2 class="feature-header">Feature</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua.</p>
 				</section>
 				<section class="feature">
-					<div>
-						<h1 class="feature-header">Feature</h1>
-					</div>
-					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua.</div>
+					<h2 class="feature-header">Feature</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua.</p>
 				</section>
 				<section class="feature">
-					<div>
-						<h1 class="feature-header">Feature</h1>
-					</div>
-					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua.</div>
+					<h2 class="feature-header">Feature</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua.</p>
 				</section>
 			</section>
 			<section class="row second-line-features">
 				<section class="feature">
-					<div>
-						<h1 class="feature-header">Feature</h1>
-					</div>
-					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua.</div>
+					<h2 class="feature-header">Feature</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua.</p>
 				</section>
 				<section class="feature">
-					<div>
-						<h1 class="feature-header">Feature</h1>
-					</div>
-					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua.</div>
+					<h2 class="feature-header">Feature</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua.</p>
 				</section>
 				<section class="feature">
-					<div>
-						<h1 class="feature-header">Feature</h1>
-					</div>
-					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua.</div>
+					<h2 class="feature-header">Feature</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua.</p>
 				</section>
 			</section>
 
 		</section>
 
-		<section class="row logo-strip">
-			<section><img width=300px;height=400px; alt="Image will come here" src="images/computer.jpg"
-					style="float:left;"></section>
-			<section style="padding-right:9%">
-				<h1>Headline.</h1>
+		<section class="row strip">
+			<img width=300px;height=400px; alt="Image will come here" src="images/computer.jpg" style="float:left;">
+			<section style="padding-left: 2%; text-align: left;">
+				<h2>Headline.</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
 					interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
 					ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante
 					ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut
-					hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero
-					sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.
-					Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo
-					purus. Mauris quis diam velit.</p>
+					hendrerit risus congue.</p>
+				<a href="#" style="text-decoration: none;">Get Started --></a>
 			</section>
 		</section>
 
 		<section class=" row features seperate">
 			<section class="main-features center">
-
-				<h1 style="font-size:35px; margin-bottom:1%">Our Experience of 18 years!</h1>
-
+				<h2 style="font-size:35px; margin-bottom:1%">Our Experience of 18 years!</h2>
 				<p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua.</p>
 			</section>
 			<section class="first-line-features">
-				<section class="center">
-					<div>
-						<h1 class="feature-header">10,000+ Customers</h1>
-					</div>
-					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua.</div>
+				<section class="feature center">
+					<h1 class="feature-header">10,000+ Customers</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua.</p>
 				</section>
-				<section class="center">
-					<div>
-						<h1 class="feature-header">4500+ projects</h1>
-					</div>
-					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua.</div>
+				<section class="feature center">
+					<h1 class="feature-header">4500+ projects</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua.</p>
 				</section>
 			</section>
 			<section class="second-line-features">
-				<section class="center">
-					<div>
-						<h1 class="feature-header">500+ Employees</h1>
-					</div>
-					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua.</div>
+				<section class="feature center">
+					<h1 class="feature-header">500+ Employees</h1>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua.</p>
 				</section>
-				<section class="center">
-					<div>
-						<h1 class="feature-header">50 M Downloads</h1>
-					</div>
-					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua.</div>
+				<section class="feature center">
+					<h1 class="feature-header">50 M Downloads</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua.</p>
 				</section>
 			</section>
 
 		</section>
 
-		<section class="row logo-strip">
-			<section>
-				<div>
-					<h1 style="font-size:35px; margin-bottom:1% float:left;">Enter the world of all fashion trends.</h1>
-				</div>
-			</section>
-			<section style="padding-right:9%; text-align: center;">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
-					interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
-					ultrices nec congue eget, auctor vitae massa.</p>
-			</section>
+		<section class="row strip seperate">
+			<!-- Section 1 -->
+			<h2 style="width: 40%; padding-left: 1%;font-size:35px; margin-bottom:1%">
+				Enter the world of all fashion trends.</h2>
+
+			<!-- Section 2 -->
+			<p class="" style="width: 50%;">
+
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+				interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
+				ultrices nec congue eget, auctor vitae massa.
+			</p>
+
 		</section>
 
+		<section class="row strip" style="background-color: #c1ffff; font-weight: 1000; color: black;">
+			<!-- Section 1 -->
+			<section style="width: 30%;padding-top:5%; padding-left: 15%;">
+				<h2 style=" font-size:35px; margin-bottom: 0%;">
+					<i class="fas fa-quote-left"
+						style="color: rgb(100 206 206 / 48%);position: absolute;left: 22%;margin-top: -1.5%;font-size: 50px;"></i>
+					Real Stories From Real Customers!
+				</h2>
+				<p>Get inspired by these stories</p>
+			</section>
+
+			<!-- Section 2 -->
+			<section class="" style="width: 0%;">
+				<img src="images/mobile.png" alt="Phone" height="400px">
+			</section>
+
+		</section>
+	</main>
+	<footer class="footer">
+		<section class="row strip" style="background-color: #71c6c6; font-weight: 1000; color: black;">
+			<!-- Section 1 -->
+			<section style="width: 36%;padding-top:5%; padding-left: 15%;">
+				<h2 style=" font-size:35px; margin-bottom: 0%;">
+					Manage your projects from your mobile.</h2>
+				<p>Downlaod the app to manage your projects, keep track of the progress and complete tasks without
+					procastrinating. Stay on track and complete on time.</p>
+
+				<p style="margin-bottom: 1%;">Get the App</p>
+				<img src="images/gplaystore.png" alt="Google Playstore" width="160px" height="60px"
+					style="margin-bottom: 2.5%;">
+				<img src="images/appstore.png" alt="Google Playstore" width="200px" height="80px">
+
+			</section>
+
+			<!-- Section 2 -->
+			<section class="" style="width: 0%;">
+				<img src="images/mobile.png" alt="Phone" height="400px">
+			</section>
+
+		</section>
 		<section class="row">
+			<section style="width: 70%; color: white;">
+				<i class="fas fa-cloud" style="	padding-top: 5%; padding-left: 5%;	font-size: 45px;"></i>
+				<section class="footer-links row">
+					<a href="#">
+						Download
+					</a>
+					<a href="#">
+						License
+					</a>
+				</section>
+				<section class="footer-links row">
+					<a href="#">
+						About
+					</a>
+					<a href="#">
+						Pricing
+					</a>
+					<a href="#">
+						Features
+					</a>
+					<a href="#">
+						Careers
+					</a>
+					<a href="#">
+						Help
+					</a>
+					<a href="#">
+						Privacy Policy
+					</a>
+				</section>
+				<p class="row" style="margin:5%"><span>&#169;</span> 2020 TPG Software Limited Mid Assesment.
+					Mohd Naved 3PG
+				</p>
+			</section>
 
+			<section style="width: 30%;">
+				<p>Get the App</p>
+				<img src="images/gplaystore.png" alt="Google Playstore" width="160px" height="55px"
+					style="border-style: solid; border-width: 1px;border-color: white;border-radius: 7px;">
+				<img src="images/appstore.png" alt="Google Playstore" width="200px" height="80px">
+
+			</section>
 		</section>
-
-	</div>
+	</footer>
 
 	<script src="scripts/fontawesome.js"></script>
 </body>
