@@ -5,119 +5,7 @@
 	<title>Mid Assesment</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-	<style>
-		body {
-			background-color: floralwhite;
-		}
-
-		.nav-header>a {
-			text-decoration: none;
-			color: inherit;
-		}
-
-		.row {
-			display: flex;
-		}
-
-		.column {
-			margin: 0% 1%;
-		}
-
-		.icon {
-			font-size: 22px;
-		}
-
-		.main {
-			padding-top: 10%;
-			padding-right: 0%;
-			font-size: 30px;
-		}
-
-		.main-features {
-			text-align: center;
-		}
-
-		.button {
-			background-color: #4CAF50;
-			/* Green */
-			border: none;
-			color: white;
-			padding: 15px 32px;
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 16px;
-			margin: 4px 2px;
-			cursor: pointer;
-		}
-
-		.button2 {
-			background-color: #008CBA;
-		}
-
-		.center {
-			margin: auto;
-			width: 60%;
-		}
-
-		.seperate {
-			margin-top: 5%;
-			margin-bottom: 5%;
-		}
-
-		.features {
-			padding-left: 1%;
-		}
-
-		.feature>p {
-			margin-top: 1%;
-		}
-
-		.feature {
-			padding: 3%;
-			padding-left: 0%;
-		}
-
-		.feature-header {
-			font-size: 20px;
-			margin-bottom: 1%;
-		}
-
-		.wrapper {
-			padding: 1%;
-			background-color: floralwhite;
-			width: 1100px;
-			margin: auto;
-			font-family: 'Open Sans', sans-serif;
-			padding-bottom: 0%;
-		}
-
-		.strip {
-			width: 1100px;
-			background-color: white;
-		}
-
-		.footer {
-			background-color: black;
-			color: white;
-			width: 1100px;
-			margin: auto;
-			font-family: 'Open Sans', sans-serif;
-		}
-
-		.footer-links>a {
-			text-decoration: none;
-			color: inherit;
-			margin-top: 5%;
-			margin-left: 5%;
-		}
-
-		/* * {
-			border-style: solid;
-			border-width: 2px;
-
-		} */
-	</style>
+	<link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -135,7 +23,7 @@
 				</nav>
 			</div>
 		</div>
-		<section class="row first seperate" style="margin-top:5%">
+		<section class="row first seperate">
 			<!-- Section 1 -->
 			<section class="column main">
 				<h1>Learn to create Projects! Get more Job done.</h1>
@@ -143,19 +31,19 @@
 			</section>
 
 			<!-- Section 2 -->
-			<section class="column" style="margin-left:-2%">
-				<img src="images/main-image.png" width="700 px">
+			<section class="column main-right">
+				<img src="images/main-image.png" class="main-image">
 			</section>
 		</section>
 
 		<section class=" row seperate">
-			<img width="1100px;" src="images/logo-strip.jpg">
+			<img class="logo-strip" src="images/logo-strip.jpg">
 		</section>
 
 		<section class="features seperate">
-			<section class="main-features center">
-				<h2 style="font-size:35px; margin-bottom: 1%;">Main features of our website</h2>
-				<p style="margin-top: 1%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+			<section class="main-feature center">
+				<h2 class="main-feature-header">Main features of our website</h2>
+				<p class="main-feature-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua.</p>
 			</section>
 			<section class="row first-line-features">
@@ -196,8 +84,8 @@
 		</section>
 
 		<section class="row strip">
-			<img width=300px;height=400px; alt="Image will come here" src="images/computer.jpg" style="float:left;">
-			<section style="padding-left: 2%; text-align: left;">
+			<img class="headline-image" alt="Computer" src="images/computer.jpg">
+			<section class="headline">
 				<h2>Headline.</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
@@ -205,14 +93,14 @@
 					ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante
 					ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut
 					hendrerit risus congue.</p>
-				<a href="#" style="text-decoration: none;">Get Started --></a>
+				<a href="#" class="read-more">Get Started --></a>
 			</section>
 		</section>
 
 		<section class=" row features seperate">
-			<section class="main-features center">
-				<h2 style="font-size:35px; margin-bottom:1%">Our Experience of 18 years!</h2>
-				<p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+			<section class="main-feature center">
+				<h2 class="main-feature-header">Our Experience of 18 years!</h2>
+				<p class="main-feature-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua.</p>
 			</section>
 			<section class="first-line-features">
@@ -242,22 +130,18 @@
 
 		</section>
 
-		<section class="row strip"
-			style="background-color: #c1ffff; font-weight: 1000; color: black; padding: 5%; width: 90%;">
-			<!-- Section 1 -->
-			<section style="width: 40%;padding-left: 15%;">
-				<h2 style=" font-size:35px; margin-bottom: 0%;">
-					<i class="fas fa-quote-left"
-						style="color: rgb(100 206 206 / 48%);position: absolute;left: 25%;margin-top: -1.5%;font-size: 50px;"></i>
+		<section class="row strip testimonials">
+			<section class="testimonials-left">
+				<h2 class="testimonials-header">
+					<i class="fas fa-quote-left testimonials-main-icon"></i>
 					Real Stories From Real Customers!
 				</h2>
 				<p>Get inspired by these stories</p>
-				<div style="margin-top: 20%;margin-left: 15%;background-color: white;border-radius: 5px;padding: 4%;	">
+				<div class="testimonial-div">
 					<img src="images/HSLogo.svg" alt="">
-					<section style="padding-left: 5%;">
-						<i class="fas fa-quote-left"
-							style="color: rgb(100 206 206 / 48%);font-size: 10px; position: absolute;margin-left: -1%;"></i>
-						<p style="font-weight: 100;text-align: left;">
+					<section class="pad-left-five-perc">
+						<i class="fas fa-quote-left testimonial-div-quote"></i>
+						<p class="testimonial-div-content">
 							To quickly start my startup landing page design, I was looking for a landing page UI
 							Kit.W3Schools helped me not only build the page but made me more confident in the pages yet
 							to
@@ -265,22 +149,20 @@
 
 						</p>
 						<footer>
-							<p style="margin-bottom: 1%;font-weight: 600;">Floyed Miles</p>
-							<span style="color: lightgray; font-weight: 100;">Vice President, GoPro</span>
+							<p class="testimonial-footer-name">Floyed Miles</p>
+							<span class="testimonial-footer-company">Vice President, GoPro</span>
 						</footer>
 					</section>
 				</div>
 			</section>
 
 			<!-- Section 2 -->
-			<section class="" style="width: 70%;">
-				<div
-					style="width: 42%;margin-top: 20%;margin-left: 15%;background-color: white;border-radius: 5px;padding: 4%;	">
-					<img src="images/HSLogo.svg" alt="">
-					<section style="padding-left: 5%;">
-						<i class="fas fa-quote-left"
-							style="color: rgb(100 206 206 / 48%);font-size: 10px; position: absolute;margin-left: -1%;"></i>
-						<p style="font-weight: 100;text-align: left;">
+			<section class="testimonials-right">
+				<div class="width-fortytwo-perc testimonial-div">
+					<img src=" images/HSLogo.svg" alt="">
+					<section class="pad-left-five-perc">
+						<i class="fas fa-quote-left testimonial-div-quote"></i>
+						<p class="testimonial-div-content">
 							To quickly start my startup landing page design, I was looking for a landing page UI
 							Kit.W3Schools helped me not only build the page but made me more confident in the pages yet
 							to
@@ -288,18 +170,16 @@
 
 						</p>
 						<footer>
-							<p style="margin-bottom: 1%;font-weight: 600;">Floyed Miles</p>
-							<span style="color: lightgray; font-weight: 100;">Vice President, GoPro</span>
+							<p class="testimonial-footer-name">Floyed Miles</p>
+							<span class="testimonial-footer-company">Vice President, GoPro</span>
 						</footer>
 					</section>
 				</div>
-				<div
-					style="width: 42%;margin-top: 10%;margin-left: 15%;background-color: white;border-radius: 5px;padding: 4%;	">
-					<img src="images/HSLogo.svg" alt="">
-					<section style="padding-left: 5%;">
-						<i class="fas fa-quote-left"
-							style="color: rgb(100 206 206 / 48%);font-size: 10px; position: absolute;margin-left: -1%;"></i>
-						<p style="font-weight: 100;text-align: left;">
+				<div class="width-fortytwo-perc testimonial-div">
+					<img src="images/HSLogo.svg" alt="HubSpot">
+					<section class="pad-left-five-perc">
+						<i class="fas fa-quote-left testimonial-div-quote"></i>
+						<p class="testimonial-div-content">
 							To quickly start my startup landing page design, I was looking for a landing page UI
 							Kit.W3Schools helped me not only build the page but made me more confident in the pages yet
 							to
@@ -307,8 +187,8 @@
 
 						</p>
 						<footer>
-							<p style="margin-bottom: 1%;font-weight: 600;">Floyed Miles</p>
-							<span style="color: lightgray; font-weight: 100;">Vice President, GoPro</span>
+							<p class="testimonial-footer-name">Floyed Miles</p>
+							<span class="testimonial-footer-company">Vice President, GoPro</span>
 						</footer>
 					</section>
 				</div>
@@ -317,46 +197,39 @@
 		</section>
 		<section class="strip">
 			<section class="row">
-				<h2 style="width: 40%; padding-left: 5%;font-size:35px; margin-bottom:1%">
-					Enter the world of all fashion trends.</h2>
-
-				<!-- Section 2 -->
-				<p class="" style="width: 50%;">
-
+				<h2 class="trends-header">
+					Enter the world of all fashion trends.
+				</h2>
+				<p class="trends-content">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
 					interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est.
 				</p>
 			</section>
 			<section class="row">
-				<img src="images/bulbs.png" alt="Bulbs" width="1000px" style="margin:auto;">
+				<img src="images/bulbs.png" alt="Bulbs" class="trends-image">
 			</section>
 		</section>
 	</main>
 	<footer class="footer">
-		<section class="row strip" style="background-color: #71c6c6; font-weight: 1000; color: black;">
-			<!-- Section 1 -->
-			<section style="width: 36%;padding-top:5%; padding-left: 15%;">
-				<h2 style=" font-size:35px; margin-bottom: 0%;">
+		<section class="row strip mobile-strip">
+			<section class="mobile-strip-left">
+				<h2 class="mobile-strip-header">
 					Manage your projects from your mobile.</h2>
 				<p>Downlaod the app to manage your projects, keep track of the progress and complete tasks without
 					procastrinating. Stay on track and complete on time.</p>
 
-				<p style="margin-bottom: 1%;">Get the App</p>
-				<img src="images/gplaystore.png" alt="Google Playstore" width="160px" height="60px"
-					style="margin-bottom: 2.5%;">
-				<img src="images/appstore.png" alt="Google Playstore" width="200px" height="80px">
+				<p class="main-feature-content">Get the App</p>
+				<img src="images/gplaystore.png" class="mobile-strip-playstore" alt="Google Playstore">
+				<img src="images/appstore.png" class="mobile-strip-appstore">
 
 			</section>
+			<img src="images/mobile.png" alt="Phone" height="400px">
 
-			<!-- Section 2 -->
-			<section class="" style="width: 0%;">
-				<img src="images/mobile.png" alt="Phone" height="400px">
-			</section>
 
 		</section>
 		<section class="row">
-			<section style="width: 70%; color: white;">
-				<i class="fas fa-cloud" style="	padding-top: 5%; padding-left: 5%;	font-size: 45px;"></i>
+			<section class="footer-left">
+				<i class="fas fa-cloud footer-icon"></i>
 				<section class="footer-links row">
 					<a href="#">
 						Download
@@ -385,16 +258,15 @@
 						Privacy Policy
 					</a>
 				</section>
-				<p class="row" style="margin:5%"><span>&#169;</span> 2020 TPG Software Limited Mid Assesment.
+				<p class="row copyright"><span>&#169;</span> 2020 TPG Software Limited Mid Assesment.
 					Mohd Naved 3PG
 				</p>
 			</section>
 
-			<section style="width: 30%;">
+			<section class="footer-right">
 				<p>Get the App</p>
-				<img src="images/gplaystore.png" alt="Google Playstore" width="160px" height="55px"
-					style="border-style: solid; border-width: 1px;border-color: white;border-radius: 7px;">
-				<img src="images/appstore.png" alt="Google Playstore" width="200px" height="80px">
+				<img src="images/gplaystore.png" alt="Google Playstore" class="footer-playstore">
+				<img src="images/appstore.png" alt="Apple Store" class="footer-appstore">
 
 			</section>
 		</section>
