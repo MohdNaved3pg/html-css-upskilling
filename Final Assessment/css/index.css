@@ -109,6 +109,9 @@ width: 100%;
 .relap-nav{
     margin-bottom: 5%;
 }
+.relap-nav-sm {
+    display: none;
+}
 
 .relap-icon {
     color: white;
@@ -138,6 +141,25 @@ width: 100%;
        border-radius: 25px;
        border-style: solid;
        border-width: 1px;
+}
+
+.fb-main {
+    position: absolute;
+    z-index: 0; 
+    bottom: 2%; 
+    right: 16%;
+}
+.twitter-main {
+    position: absolute;
+    z-index: 0; 
+    bottom: 2%; 
+    right: 13%;
+}
+.insta-main {
+    position: absolute; 
+    z-index: 0; 
+    bottom: 2%; 
+    right: 10%;
 }
 
 .row {
@@ -261,8 +283,17 @@ width: 100%;
     margin-bottom: 5%;
 }
 
+.optimus-left {
+    width: 27%;
+}
+
 .computer{
     margin-left: 15%;
+}
+
+.computer-img {
+    width: 704px;
+    height: 790px;
 }
 .width-50{
     width: 50%;
@@ -313,6 +344,10 @@ width: 100%;
 .multi-img-row{
     margin-top: -11%;
 
+}
+
+.button-all-works {
+    margin-left: 35%;
 }
 
 .img-with-text {
@@ -399,6 +434,7 @@ border-radius: 3px;
 }
 
 .footer-img-row{
+    display: flex;
     margin-top: 37%;
 }
 
@@ -415,11 +451,194 @@ ul > li {
     margin-bottom: 12%;
 }
 
-.copyright {
-    margin:5%;
-}
+
 
 
 .pad-left-five-perc {
     padding-left: 5%;
 }
+
+@media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+    .landing {
+        background-image: url(../images/main-bg-mobile.png);
+        background-size: contain;
+    }
+
+    .relap-nav{
+        margin-bottom: 5%;
+        display: none;
+    }
+
+    .computer-img {
+        width: 412px;
+        height: 462px;
+        margin-left: 6%;
+        max-width: initial;
+        margin-top: 5%;
+    }
+
+    .optimus-left {
+        width: 90%;
+    }
+    .hover-img-left{
+        width: 100%;
+    }
+
+    .hover-img{
+        width: 339px;
+        height: 272px;
+        position: absolute;
+        right: 15px;
+    }
+    
+    .hover-img-bg{
+        width: 355px;
+        height: 272px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .corporis-wrapper {
+        margin-top: -21%;
+    }
+    .corporis-circle {
+        z-index: 1;
+        position: relative;
+        top: -190px;
+        left: 85%;
+        width: 58px;
+        height: 58px;
+    }
+
+    .footer-img-row{
+        display: flex;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    .copyright {
+        margin-left:10%;
+    }
+
+    .footer-list {
+        list-style: none;
+        margin-left: 0%;
+        padding-top: 0%;
+    }
+    .center {
+        margin: auto;
+        width: 100%;
+    }
+    .contact-us-email {
+        margin: 5% 10%;
+        width: 78%;
+        border-color: silver;
+    }
+    .computer {
+        margin-left: 0%;
+    }
+
+    .button-sm {
+        width: 50%;
+        margin: auto;
+    }
+
+    .tiles {
+
+        width: 80%;
+        text-align: left;
+        padding:3%;
+        margin-right: 6%;
+        box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.0994678);
+        border-radius: 3px;
+    }
+    .tile-1,.tile-2,.tile-3 {
+        margin-top: 5%;
+        margin-left: 8.5%;
+    }
+
+    .header-sm{
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .multiscreen{
+        margin-left: 5%;
+        margin-right: 8%;
+        background-color: #FDF2FF;
+    }
+
+    .button-all-works {
+        margin-left: 22%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #multiscreen-text{
+        width: 100%;
+        color: #333333;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    .corporis {
+        margin-left: 5%;
+    }
+    .corporis-text {
+        width: 90%;
+    }
+    .fb-main {
+        position: absolute;
+        z-index: 0; 
+        bottom: -30%; 
+        right: 55%;
+    }
+    .twitter-main {
+        position: absolute;
+        z-index: 0; 
+        bottom: -30%; 
+        right: 45%;
+    }
+    .insta-main {
+        position: absolute; 
+        z-index: 0; 
+        bottom: -30%; 
+        right: 35%;
+    }
+
+    .relap-icon {
+    color: black;
+    margin: 0;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+    }
+
+    .relap-nav-sm {
+        background: white;
+        padding: 5%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hamburger-menu{
+        margin-top: -2.5%;
+        margin-left: 55%;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+
+      .side-crop { max-width: 100%; overflow: hidden; }
+  }
