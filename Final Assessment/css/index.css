@@ -5,6 +5,7 @@
 body{
     margin:0;
     padding: 0;
+    font-family: Poppins;
 }
 h1 {
     font-family: Poppins;
@@ -535,13 +536,18 @@ ul > li {
         margin: 5% 10%;
         width: 78%;
         border-color: silver;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
     }
     .computer {
         margin-left: 0%;
     }
 
     .button-sm {
-        width: 50%;
+        width: 40%;
         margin: auto;
     }
 
@@ -639,6 +645,14 @@ ul > li {
         margin: 6px 0;
         transition: 0.4s;
       }
+
+      .mobile-margin{
+          margin-top: 10%;
+      }
+
+      ul > li {
+        margin-bottom: 5%;
+    }
 
       .side-crop { max-width: 100%; overflow: hidden; }
   }
